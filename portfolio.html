@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio & Case Studies | AGUN MEDIAS</title>
+  <meta name="description" content="See AGUN MEDIAS work in action. Browse our portfolio of viral campaigns, cinematic productions, and social media domination stories." />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <style>
+    .portfolio-section {
+      padding-bottom: 100px;
+    }
+    
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      margin-top: 64px;
+    }
+
+    .portfolio-item {
+      background: var(--black-card);
+      border: 1px solid var(--gray-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      position: relative;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .portfolio-item:hover {
+      border-color: var(--orange);
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 9/16; /* Most reels are 9:16 */
+      background: #000;
+      overflow: hidden;
+    }
+
+    /* Handling different aspect ratios for specific videos */
+    .video-container.square {
+      aspect-ratio: 1/1;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .portfolio-info {
+      padding: 32px;
+      background: linear-gradient(to top, var(--black-mid), transparent);
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .portfolio-tag {
+      font-family: var(--ff-heading);
+      color: var(--orange);
+      font-size: 14px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .portfolio-title {
+      font-family: var(--ff-heading);
+      font-size: 32px;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .disclaimer-box {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px dashed var(--gray-border);
+      padding: 40px;
+      border-radius: var(--radius-lg);
+      margin-top: 80px;
+      text-align: center;
+    }
+
+    .disclaimer-box h3 {
+      font-family: var(--ff-heading);
+      font-size: 36px;
+      margin-bottom: 16px;
+      color: var(--orange);
+    }
+
+    .disclaimer-box p {
+      max-width: 700px;
+      margin-inline: auto;
+      color: var(--white-dim);
+      font-size: 18px;
+    }
+
+    /* Modal / Lightbox Style if needed - but we'll stick to a clean grid for now */
+
+    @media (max-width: 768px) {
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <meta name="robots" content="index, follow" />
+  <link rel="portfolio.html" href="https://agunmedias.in/portfolio.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Portfolio & Case Studies | AGUN MEDIAS" />
+  <meta property="og:description" content="See AGUN MEDIAS work in action. Browse our portfolio of viral campaigns, cinematic productions, and social media domination stories." />
+  <meta property="og:url" content="https://agunmedias.in/portfolio.html" />
+  <meta property="og:site_name" content="AGUN MEDIAS" />
+  <meta property="og:image" content="https://agunmedias.in/assets/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfolio & Case Studies | AGUN MEDIAS" />
+  <meta name="twitter:description" content="See AGUN MEDIAS work in action. Browse our portfolio of viral campaigns, cinematic productions, and social media domination stories." />
+  <meta name="twitter:image" content="https://agunmedias.in/assets/img/og-image.png" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+</head>
+<body>
+  
+  <div id="custom-cursor"></div>
+  <div class="bg-mesh"></div>
+
+  <!-- Navbar -->
+  <nav class="nav" id="main-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" style="text-decoration:none;display:flex;align-items:center;"><img src="assets/img/Agun media logo.png" alt="AGUN MEDIAS Logo" style="height:72px;width:auto;" /></a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html" style="color: var(--white);">Portfolio</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      
+      <a href="contact.html" class="btn btn-primary nav-cta" style="padding: 12px 32px; font-size: 14px;">Let's Talk</a>
+      
+      <div class="nav-hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="packages.html">Packages</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="hero" style="min-height: 60vh; padding-top: 160px;">
+    <div id="particles-js" style="position: absolute; inset: 0; z-index: 1;"></div>
+    <div class="container" style="z-index: 2;">
+      <span class="text-orange fade-up" style="font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; font-size: 14px;">Our Proof</span>
+      <h1 class="t-hero fade-up" id="hero-headline" style="margin-top: 16px;">The <br><span class="text-orange">Execution</span>.</h1>
+      <p class="hero-sub fade-up delay-1" style="max-width: 800px;">
+        We don't sell hope. We sell results. Below is a glimpse into the high-impact visual assets and viral strategies we've deployed.
+      </p>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="portfolio-section">
+    <div class="container">
+      <div class="portfolio-grid">
+        
+        <div class="portfolio-item fade-up hoverable">
+          <div class="video-container">
+            <video preload="metadata" loop muted playsinline onmouseover="this.play()" onmouseout="this.pause()">
+              <source src="Edited%20Vidoes/That%20click%20in%20your%20jaw%20isn%E2%80%99t%20normal%20%F0%9F%91%82It%E2%80%99s%20your%20TMJ%20asking%20for%20attention%20%F0%9F%92%ACDr.%20Bala%2C%20TMJ%20%26%20Orofa.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Healthcare Awareness</span>
+            <h3 class="portfolio-title">Dr. Bala TMJ Specialist Reel</h3>
+            <p class="t-body" style="font-size: 16px;">Educational content engineered to stop the scroll and build instant authority in the medical niche.</p>
+          </div>
+        </div>
+
+        <!-- Video 2: City/Local Reel -->
+        <div class="portfolio-item fade-up delay-1 hoverable">
+          <div class="video-container">
+            <video preload="metadata" loop muted playsinline onmouseover="this.play()" onmouseout="this.pause()">
+              <source src="Edited%20Vidoes/Tiruchengode%20x%20Agun%20Reel%20SQ.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">City Branding</span>
+            <h3 class="portfolio-title">Tiruchengode x AGUN Collab</h3>
+            <p class="t-body" style="font-size: 16px;">Cinematic local promotion designed to highlight landmarks with modern social energy.</p>
+          </div>
+        </div>
+
+        <!-- Video 3: Founder/Collab 1 -->
+        <div class="portfolio-item fade-up hoverable">
+          <div class="video-container">
+            <video preload="metadata" loop muted playsinline onmouseover="this.play()" onmouseout="this.pause()">
+              <source src="Edited%20Vidoes/Naga%20may%2001-_1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Founder Collaboration</span>
+            <h3 class="portfolio-title">High-Impact Brand Story</h3>
+            <p class="t-body" style="font-size: 16px;">Strategic storytelling and cinematic editing for founder-led digital movements.</p>
+          </div>
+        </div>
+
+        <!-- Video 4: Founder/Collab 2 -->
+        <div class="portfolio-item fade-up delay-1 hoverable">
+          <div class="video-container">
+            <video preload="metadata" loop muted playsinline onmouseover="this.play()" onmouseout="this.pause()">
+              <source src="Edited%20Vidoes/BABU%20jULY1-.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Content Strategy</span>
+            <h3 class="portfolio-title">Visual Identity Series</h3>
+            <p class="t-body" style="font-size: 16px;">Consistent, premium aesthetic for personal brands that refuse to look average.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Disclaimer Section -->
+      <div class="disclaimer-box fade-up">
+        <h3>This is Just the Beginning</h3>
+        <p>
+          The footage above represents only a small fraction of the projects we've executed and the collaborations our founder has led. 
+          We protect our clients' proprietary strategies—most of our high-performing "secret sauce" isn't listed here.
+        </p>
+      </div>
+
+      <!-- Aggressive CTA -->
+      <div class="container" style="padding-top: 80px;">
+        <section class="cta-banner hoverable" style="background: linear-gradient(135deg, var(--orange) 0%, #ff0000 100%);">
+          <h2 class="t-h1" style="color: var(--black); font-size: clamp(40px, 8vw, 100px);">Serious About <br>Going Viral?</h2>
+          <p class="t-body" style="color: var(--black); font-weight: 700; font-size: 20px; margin-top: 24px;">
+            If you are really serious to go viral and need to see our real works and strategies, just book us and we will work.
+          </p>
+          <div style="margin-top: 48px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
+            <a href="https://wa.me/919786580662" target="_blank" rel="noopener" class="btn btn-primary" style="background: var(--black); color: var(--white); border: none;">
+              <i class="fa-brands fa-whatsapp"></i> Book Your Strategy Call
+            </a>
+            <a href="contact.html" class="btn btn-outline" style="border-color: var(--black); color: var(--black);">
+              Contact Us
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" style="font-family: var(--ff-heading); font-size: 40px; color: var(--white); text-decoration: none; letter-spacing: 0.05em; display: block; margin-bottom: 24px;">
+            <span class="text-orange">A</span>GUN MEDIAS
+          </a>
+          <p class="t-body" style="font-size: 16px; margin-bottom: 32px;">Your Digital Partner. We engineer movements for brands that refuse to be ignored.</p>
+        </div>
+        
+        <div>
+          <h4 style="font-family: var(--ff-heading); font-size: 24px; margin-bottom: 24px; color: var(--white-dim);">Quick Links</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px;">
+            <li><a href="index.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Home</a></li>
+            <li><a href="about.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">About Us</a></li>
+            <li><a href="services.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Services</a></li>
+            <li><a href="portfolio.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Portfolio</a></li>
+            <li><a href="packages.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Packages</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 style="font-family: var(--ff-heading); font-size: 32px; margin-bottom: 24px; color: var(--white-dim); text-transform: uppercase; font-weight: 800; letter-spacing: 0.05em;">CONTACT US</h4>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <a href="https://wa.me/919786580662" target="_blank" class="contact-btn hoverable">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://instagram.com/agunmedias" target="_blank" class="contact-btn hoverable">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="mailto:agunmedias@gmail.com" class="contact-btn hoverable">
+              <i class="fa-regular fa-envelope"></i> Email Us
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 AGUN MEDIAS. All Rights Reserved.</p>
+        <p style="font-family: var(--ff-heading); letter-spacing: 0.05em; color: var(--orange); font-size: 20px;">WE DOMINATE.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

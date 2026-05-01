@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Production Services | AGUN MEDIAS</title>
+  <meta name="description" content="Cinematic brand documentaries, product shoots, and commercial production. AGUN MEDIAS builds the visual authority your brand deserves." />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <style>
+    .service-hero { min-height: 70vh; padding-top: 140px; padding-bottom: 80px; display: flex; align-items: center; position: relative; }
+    .service-icon { font-size: 80px; color: var(--orange); margin-bottom: 32px; display: inline-block; filter: drop-shadow(0 0 20px rgba(245, 124, 0, 0.4)); }
+    
+    .features-list { list-style: none; display: flex; flex-direction: column; gap: 32px; margin-top: 48px; }
+    .features-list li { display: flex; align-items: flex-start; gap: 24px; padding: 24px; background: rgba(255,255,255,0.02); border: 1px solid var(--gray-border); border-radius: 16px; backdrop-filter: blur(10px); transition: var(--transition); }
+    .features-list li:hover { border-color: rgba(245, 124, 0, 0.3); transform: translateX(10px); background: rgba(245, 124, 0, 0.05); }
+    .features-list i { color: var(--orange); font-size: 28px; margin-top: 4px; background: rgba(245, 124, 0, 0.1); padding: 16px; border-radius: 12px; }
+    .features-list h4 { font-family: var(--ff-heading); font-size: 28px; margin-bottom: 8px; color: var(--white); letter-spacing: 0.05em; }
+    .features-list p { font-family: var(--ff-body); font-size: 16px; color: var(--white-dim); line-height: 1.6; }
+
+    .solution-card {
+      background: var(--black-card); 
+      border: 1px solid rgba(245, 124, 0, 0.3); 
+      border-radius: var(--radius-lg); 
+      padding: 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .solution-card::before {
+      content: '';
+      position: absolute;
+      top: -50%; left: -50%;
+      width: 200%; height: 200%;
+      background: radial-gradient(circle at 50% 50%, rgba(245, 124, 0, 0.05) 0%, transparent 50%);
+      pointer-events: none;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <meta name="robots" content="index, follow" />
+  <link rel="service-production.html" href="https://agunmedias.in/service-production.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Media Production Services | AGUN MEDIAS" />
+  <meta property="og:description" content="Cinematic brand documentaries, product shoots, and commercial production. AGUN MEDIAS builds the visual authority your brand deserves." />
+  <meta property="og:url" content="https://agunmedias.in/service-production.html" />
+  <meta property="og:site_name" content="AGUN MEDIAS" />
+  <meta property="og:image" content="https://agunmedias.in/assets/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Media Production Services | AGUN MEDIAS" />
+  <meta name="twitter:description" content="Cinematic brand documentaries, product shoots, and commercial production. AGUN MEDIAS builds the visual authority your brand deserves." />
+  <meta name="twitter:image" content="https://agunmedias.in/assets/img/og-image.png" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+</head>
+<body>
+  <div id="custom-cursor"></div>
+  <div class="bg-mesh"></div>
+
+  <!-- Navbar -->
+  <nav class="nav" id="main-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" style="text-decoration:none;display:flex;align-items:center;"><img src="assets/img/Agun media logo.png" alt="AGUN MEDIAS Logo" style="height:72px;width:auto;" /></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" style="color: var(--white);">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="packages.html">Partnership</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta" style="padding: 12px 32px; font-size: 14px; background: var(--orange); color: var(--black);">Let's Talk</a>
+      <div class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html" style="color: var(--orange);">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="packages.html">Partnership</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <section class="service-hero">
+    <div id="particles-js" style="position: absolute; inset: 0; z-index: 1;"></div>
+    <div class="container" style="z-index: 2; position: relative;">
+      <div class="grid-2" style="align-items: center; gap: 80px;">
+        <div class="fade-up">
+          <span class="text-orange" style="font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; font-size: 14px; display: block; margin-bottom: 24px;">Weapon 04</span>
+          <i class="fa-solid fa-video service-icon"></i>
+          <h1 class="t-hero" style="font-size: clamp(64px, 8vw, 100px); margin-bottom: 24px; line-height: 0.9;">Media<br><span class="text-orange">Production</span></h1>
+          <p class="t-body" style="font-size: 20px; max-width: 500px;">End-to-end cinematic shoots. From concept to camera to the final color grade, we engineer visuals that command absolute premium authority.</p>
+          <a href="contact.html" class="btn btn-primary hoverable" style="margin-top: 40px; padding: 20px 40px; font-size: 18px;">Book a Shoot <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i></a>
+        </div>
+        <div class="fade-up delay-1">
+          <ul class="features-list">
+            <li>
+              <i class="fa-solid fa-camera"></i>
+              <div>
+                <h4>Product & Lifestyle Shoots</h4>
+                <p>High-end photography and commercial video production that elevates your brand's perceived value instantly.</p>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-film"></i>
+              <div>
+                <h4>Brand Documentaries</h4>
+                <p>Story-driven mini-films that communicate your founder's journey and build deep, unbreakable emotional connections.</p>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-microphone"></i>
+              <div>
+                <h4>Podcast Production</h4>
+                <p>Multi-cam, professionally lit, and crystal-clear audio setups designed to launch industry-leading authority podcasts.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Story Scroll -->
+  <section class="section" style="background: var(--black-mid); position: relative; padding: 120px 0;">
+    <div class="container">
+      
+      <div style="position: relative; max-width: 900px; margin: 0 auto; padding-left: 64px;">
+        
+        <!-- Moving Guide / Charger Line -->
+        <div style="position: absolute; top: 0; bottom: 0; left: 16px; width: 4px; background: rgba(255,255,255,0.05); border-radius: 4px;">
+          <!-- Sticky Glowing Node -->
+          <div style="position: sticky; top: 50vh; display: flex; align-items: center; justify-content: center; width: 48px; height: 72px; background: var(--black-card); border: 2px solid var(--orange); border-radius: 50%; transform: translateX(-22px); box-shadow: 0 0 30px rgba(245, 124, 0, 0.5); z-index: 10; backdrop-filter: blur(10px);">
+            <i class="fa-solid fa-angles-down" style="color: var(--orange); font-size: 20px;"></i>
+          </div>
+        </div>
+
+        <!-- Right: Scrolling Chapters -->
+        <div class="scroll-story">
+          
+          <!-- Chapter 1 -->
+          <div class="fade-up" style="margin-bottom: 120px; padding-top: 40px;">
+            <span class="text-orange" style="font-family: var(--ff-heading); letter-spacing: 0.1em; font-size: 20px;">CHAPTER 01: THE DEVALUATION</span>
+            <h2 class="t-h2" style="font-size: 56px; margin: 16px 0 24px;">Cheap Content <br><span style="color: var(--white-dim);">Kills Brands.</span></h2>
+            <p class="t-body" style="font-size: 20px; line-height: 1.8; margin-bottom: 24px; border-left: 2px solid var(--gray-border); padding-left: 24px;">
+              "UGC is great for daily TikTok engagement. But I've seen brands try to sell a high-ticket service or a premium product using a shaky, poorly lit iPhone video shot in a messy room. The perceived value instantly drops to zero."
+            </p>
+            <p class="t-body" style="font-size: 20px; line-height: 1.8;">
+              You simply cannot command premium pricing if your digital footprint looks amateur. To dominate your market, your aesthetic must be <span class="text-orange" style="font-weight: 700;">undeniable</span>.
+            </p>
+          </div>
+
+          <!-- Chapter 2 -->
+          <div class="fade-up" style="margin-bottom: 120px;">
+            <span class="text-orange" style="font-family: var(--ff-heading); letter-spacing: 0.1em; font-size: 20px;">CHAPTER 02: THE CRAFT</span>
+            <h2 class="t-h2" style="font-size: 56px; margin: 16px 0 24px;">Cinematic <br><span style="color: var(--white-dim);">Authority.</span></h2>
+            <p class="t-body" style="font-size: 20px; line-height: 1.8; margin-bottom: 24px; border-left: 2px solid var(--orange); padding-left: 24px;">
+              "We realized we needed to bring Hollywood-grade production to the digital feed. We don't just shoot video; we shape light, we engineer sound, and we color grade to trigger psychological responses."
+            </p>
+            <p class="t-body" style="font-size: 20px; line-height: 1.8;">
+              When a prospect lands on your page and sees cinema cameras, professional lighting grids, and meticulous set design, you no longer have to convince them you are the best. They can literally see it.
+            </p>
+          </div>
+
+          <!-- Chapter 3 -->
+          <div class="solution-card fade-up" style="margin-bottom: 40px;">
+            <span class="text-orange" style="font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; font-size: 14px;">CHAPTER 03: THE DOMINATION</span>
+            <h3 class="t-h3 mb-16" style="font-family: var(--ff-heading); font-size: 48px; letter-spacing: 0.05em; margin-top: 16px; margin-bottom: 24px;">High-End Execution.</h3>
+            <p class="t-body mb-24" style="margin-bottom: 32px;">Every shoot is meticulously planned. From pre-production storyboarding to the final DaVinci Resolve color grade, we build visual assets that make your brand look like an empire.</p>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px; color: var(--white);">
+              <li style="display: flex; align-items: center; font-size: 18px; font-weight: 500;"><i class="fa-solid fa-camera-retro text-orange" style="margin-right: 16px; font-size: 20px;"></i> Cinema-grade camera packages and lenses</li>
+              <li style="display: flex; align-items: center; font-size: 18px; font-weight: 500;"><i class="fa-solid fa-lightbulb text-orange" style="margin-right: 16px; font-size: 20px;"></i> Professional lighting and foley audio engineering</li>
+              <li style="display: flex; align-items: center; font-size: 18px; font-weight: 500;"><i class="fa-solid fa-palette text-orange" style="margin-right: 16px; font-size: 20px;"></i> Industry-standard narrative color grading</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. The Process (Bento Grid) -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center fade-up">
+        <span class="text-orange" style="font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; font-size: 14px;">Methodology</span>
+        <h2 class="t-h1" style="margin-top: 16px;">Our <span class="text-orange">Production Pipeline</span></h2>
+      </div>
+      
+      <div class="bento-grid fade-up delay-1" style="margin-top: 64px;">
+        <div class="bento-card bento-half hoverable">
+          <div>
+            <i class="fa-solid fa-pen-ruler bento-icon"></i>
+            <h3 style="font-size: 32px;">1. Pre-Production</h3>
+            <p class="t-body" style="font-size: 18px;">We don't guess on set. We storyboard every frame, scout locations, cast talent, and build a meticulous shot list to ensure the shoot day runs flawlessly.</p>
+          </div>
+        </div>
+        <div class="bento-card bento-half hoverable">
+          <div>
+            <i class="fa-solid fa-clapperboard bento-icon"></i>
+            <h3 style="font-size: 32px;">2. Principal Photography</h3>
+            <p class="t-body" style="font-size: 18px;">Our crew takes over. We deploy cinema cameras, shape the lighting to match the exact brand mood, and capture the high-resolution raw assets.</p>
+          </div>
+        </div>
+        <div class="bento-card bento-half hoverable">
+          <div>
+            <i class="fa-solid fa-scissors bento-icon"></i>
+            <h3 style="font-size: 32px;">3. Editorial & Sound</h3>
+            <p class="t-body" style="font-size: 18px;">The footage is cut together with precision pacing. We build custom soundscapes, foley, and score the project to trigger specific emotional responses.</p>
+          </div>
+        </div>
+        <div class="bento-card bento-half hoverable">
+          <div>
+            <i class="fa-solid fa-palette bento-icon"></i>
+            <h3 style="font-size: 32px;">4. Color & Finishing</h3>
+            <p class="t-body" style="font-size: 18px;">The final polish. We apply industry-standard color grading to give the footage that deep, rich, "expensive" cinematic feel before final delivery.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Final CTA -->
+  <div class="container">
+    <section class="cta-banner hoverable" style="margin-bottom: 80px; margin-top: 40px;">
+      <h2 class="t-h1" style="color: var(--black);">Look Like a Blockbuster.</h2>
+      <p class="t-body" style="color: rgba(0,0,0,0.8); font-weight: 700;">Elevate your brand's perception instantly with cinematic production.</p>
+      <a href="contact.html" class="btn btn-primary" style="background: var(--black); color: var(--white); margin-top: 32px;">
+        Initiate Partnership <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div>
+          <a href="index.html" style="font-family: var(--ff-heading); font-size: 40px; color: var(--white); text-decoration: none; letter-spacing: 0.05em; display: block; margin-bottom: 24px;">
+            <span class="text-orange">A</span>GUN MEDIAS
+          </a>
+          <p class="t-body" style="font-size: 16px; margin-bottom: 32px;">Your Digital Partner. We engineer movements for brands that refuse to be ignored.</p>
+        </div>
+        
+        <div>
+          <h4 style="font-family: var(--ff-heading); font-size: 24px; margin-bottom: 24px; color: var(--white-dim);">Quick Links</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px;">
+            <li><a href="index.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Home</a></li>
+            <li><a href="about.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">About Us</a></li>
+            <li><a href="services.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Services</a></li>
+            <li><a href="portfolio.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Portfolio</a></li>
+            <li><a href="packages.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Partnership</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 style="font-family: var(--ff-heading); font-size: 32px; margin-bottom: 24px; color: var(--white-dim); text-transform: uppercase; font-weight: 800; letter-spacing: 0.05em;">CONTACT US</h4>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <a href="https://wa.me/919786580662" target="_blank" class="contact-btn hoverable" style="padding: 16px 24px; font-size: 16px; border-radius: 12px; border: 1px solid var(--gray-border); background: rgba(255,255,255,0.03);">
+              <i class="fa-brands fa-whatsapp" style="font-size: 20px; padding: 0; background: transparent;"></i> WhatsApp
+            </a>
+            <a href="https://instagram.com/agunmedias" target="_blank" class="contact-btn hoverable" style="padding: 16px 24px; font-size: 16px; border-radius: 12px; border: 1px solid var(--gray-border); background: rgba(255,255,255,0.03);">
+              <i class="fa-brands fa-instagram" style="font-size: 20px; padding: 0; background: transparent;"></i> Instagram
+            </a>
+            <a href="mailto:agunmedias@gmail.com" class="contact-btn hoverable" style="padding: 16px 24px; font-size: 16px; border-radius: 12px; border: 1px solid var(--gray-border); background: rgba(255,255,255,0.03);">
+              <i class="fa-regular fa-envelope" style="font-size: 20px; padding: 0; background: transparent;"></i> Email Us
+            </a>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 AGUN MEDIAS. All Rights Reserved.</p>
+        <p style="font-family: var(--ff-heading); letter-spacing: 0.05em; color: var(--orange); font-size: 20px;">WE DOMINATE.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

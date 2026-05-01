@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About AGUN MEDIAS | Our Story & Mission</title>
+  <meta name="description" content="Learn how AGUN MEDIAS became a powerhouse social media marketing agency. Our journey, our team, and our relentless mission to turn brands into movements." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .about-hero {
+      min-height: 60vh;
+      display: flex;
+      align-items: flex-end;
+      padding-top: 160px;
+      padding-bottom: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at 80% 50%, rgba(245,124,0,0.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .stat-card {
+      background: #0d0d0d;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 20px;
+      padding: 48px 24px;
+      text-align: center;
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+    .stat-card:hover {
+      border-color: var(--orange);
+      transform: translateY(-4px);
+    }
+    .stat-number {
+      font-family: var(--ff-heading);
+      font-size: clamp(56px, 7vw, 88px);
+      color: var(--orange);
+      line-height: 1;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .stat-label {
+      color: rgba(255,255,255,0.5);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 13px;
+    }
+    .value-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 32px;
+      padding: 40px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .value-row:last-child { border-bottom: none; }
+    .value-num {
+      font-family: var(--ff-heading);
+      font-size: 64px;
+      color: rgba(245,124,0,0.15);
+      line-height: 1;
+      min-width: 80px;
+      font-weight: 900;
+    }
+    .value-content h3 {
+      font-family: var(--ff-heading);
+      font-size: 28px;
+      margin-bottom: 12px;
+      color: var(--white);
+    }
+    .value-content p {
+      color: rgba(255,255,255,0.55);
+      font-size: 17px;
+      line-height: 1.7;
+      max-width: 600px;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .why-card {
+      background: #0d0d0d;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 20px;
+      padding: 40px 32px;
+      transition: border-color 0.3s ease;
+    }
+    .why-card:hover { border-color: var(--orange); }
+    .why-icon {
+      width: 56px; height: 56px;
+      border-radius: 14px;
+      background: rgba(245,124,0,0.1);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+      color: var(--orange);
+      margin-bottom: 24px;
+      border: 1px solid rgba(245,124,0,0.2);
+    }
+    .why-card h3 {
+      font-family: var(--ff-heading);
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+    .why-card p {
+      color: rgba(255,255,255,0.5);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    @media (max-width: 768px) {
+      .value-row { flex-direction: column; gap: 16px; }
+      .value-num { font-size: 40px; }
+    }
+  </style>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <meta name="robots" content="index, follow" />
+  <link rel="about.html" href="https://agunmedias.in/about.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About AGUN MEDIAS | Our Story & Mission" />
+  <meta property="og:description" content="Learn how AGUN MEDIAS became a powerhouse social media marketing agency. Our journey, our team, and our relentless mission to turn brands into movements." />
+  <meta property="og:url" content="https://agunmedias.in/about.html" />
+  <meta property="og:site_name" content="AGUN MEDIAS" />
+  <meta property="og:image" content="https://agunmedias.in/assets/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About AGUN MEDIAS | Our Story & Mission" />
+  <meta name="twitter:description" content="Learn how AGUN MEDIAS became a powerhouse social media marketing agency. Our journey, our team, and our relentless mission to turn brands into movements." />
+  <meta name="twitter:image" content="https://agunmedias.in/assets/img/og-image.png" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+</head>
+<body>
+
+  <div id="custom-cursor"></div>
+  <div class="bg-mesh"></div>
+
+  <!-- Navbar -->
+  <nav class="nav" id="main-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" style="text-decoration:none;display:flex;align-items:center;"><img src="assets/img/Agun media logo.png" alt="AGUN MEDIAS Logo" style="height:72px;width:auto;" /></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" style="color: var(--white);">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta" style="padding: 12px 32px; font-size: 14px;">Let's Talk</a>
+      <div class="nav-hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="packages.html">Packages</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="about-hero">
+    <div class="container">
+      <p style="color: var(--orange); font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; font-size: 13px; margin-bottom: 24px;">About Us</p>
+      <h1 id="hero-headline" style="font-family: var(--ff-heading); font-size: clamp(56px, 9vw, 140px); line-height: 0.9; text-transform: uppercase; color: var(--white); margin-bottom: 32px;">
+        We Don't<br>Follow Rules.<br><span class="text-orange">We Write</span> Them.
+      </h1>
+      <p style="font-size: clamp(18px, 2vw, 22px); color: rgba(255,255,255,0.55); max-width: 640px; line-height: 1.7;">
+        AGUN MEDIAS is a full-service digital agency engineering movements for brands that refuse to be ignored — through cinematic content, data-driven ads, and relentless strategy.
+      </p>
+    </div>
+  </section>
+
+  <!-- Stats Row -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px;">
+        <div class="stat-card hoverable">
+          <span class="stat-number">7+</span>
+          <p class="stat-label">Years in the Game</p>
+        </div>
+        <div class="stat-card hoverable">
+          <span class="stat-number">50M+</span>
+          <p class="stat-label">Views Generated</p>
+        </div>
+        <div class="stat-card hoverable">
+          <span class="stat-number">100+</span>
+          <p class="stat-label">Brands Scaled</p>
+        </div>
+        <div class="stat-card hoverable">
+          <span class="stat-number">6</span>
+          <p class="stat-label">Core Services</p>
+        </div>
+        <div class="stat-card hoverable">
+          <span class="stat-number">24/7</span>
+          <p class="stat-label">Always Executing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manifesto / Story -->
+  <section class="section" style="background: #080808;">
+    <div class="container">
+      <div class="grid-2" style="gap: 80px; align-items: center;">
+        <div>
+          <p style="color: var(--orange); font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; font-size: 12px; margin-bottom: 20px;">The Story</p>
+          <h2 style="font-family: var(--ff-heading); font-size: clamp(36px, 5vw, 64px); line-height: 1.05; margin-bottom: 32px;">
+            Built For Brands That <span class="text-orange">Refuse</span> To Be Average.
+          </h2>
+          <p style="color: rgba(255,255,255,0.6); font-size: 18px; line-height: 1.8; margin-bottom: 24px;">
+            AGUN MEDIAS was born from a simple frustration: too many great brands were being buried by generic content and agencies that played it safe. We knew the digital world rewarded the bold, the cinematic, the disruptive.
+          </p>
+          <p style="color: rgba(255,255,255,0.6); font-size: 18px; line-height: 1.8; margin-bottom: 24px;">
+            So we built a powerhouse. Over 7 years, we've engineered viral campaigns, produced cinema-quality content, and managed millions in ad spend for brands across industries. Every project we take on gets one mandate: <strong style="color: var(--white);">dominate or don't ship.</strong>
+          </p>
+          <p style="color: rgba(255,255,255,0.6); font-size: 18px; line-height: 1.8;">
+            We don't work with everyone. We work with brands ready to go from invisible to unavoidable.
+          </p>
+        </div>
+        <div>
+          <div style="position: relative; border-radius: 24px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08);">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" alt="AGUN MEDIAS team at work" style="width: 100%; height: 520px; object-fit: cover; display: block; filter: grayscale(40%);" />
+            <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 50%);"></div>
+            <div style="position: absolute; bottom: 32px; left: 32px;">
+              <p style="color: var(--orange); font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; font-size: 12px; margin-bottom: 8px;">Founded</p>
+              <h3 style="font-family: var(--ff-heading); font-size: 40px; color: var(--white); line-height: 1;">7+ Years of<br>Digital Dominance</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+        <div>
+          <p style="color: var(--orange); font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; font-size: 12px; margin-bottom: 20px;">What Drives Us</p>
+          <h2 style="font-family: var(--ff-heading); font-size: clamp(36px, 4vw, 56px); line-height: 1.05; margin-bottom: 0;">
+            Our Core <span class="text-orange">Principles</span>
+          </h2>
+        </div>
+        <div></div>
+      </div>
+
+      <div style="margin-top: 64px;">
+        <div class="value-row">
+          <span class="value-num">01</span>
+          <div class="value-content">
+            <h3>Agility Over Process</h3>
+            <p>Trends don't wait. Neither do we. We move fast, adapt instantly, and capitalize on cultural moments before anyone else even notices them. Speed is our competitive weapon in an internet culture that rewards the quick.</p>
+          </div>
+        </div>
+        <div class="value-row">
+          <span class="value-num">02</span>
+          <div class="value-content">
+            <h3>Cinematic Quality. Zero Compromise.</h3>
+            <p>We would rather kill a campaign than launch mediocre content. Every frame, every word, every pixel is crafted to a standard that commands attention, builds brand equity, and gets remembered long after the scroll.</p>
+          </div>
+        </div>
+        <div class="value-row">
+          <span class="value-num">03</span>
+          <div class="value-content">
+            <h3>Results Are The Only Metric</h3>
+            <p>Vanity metrics are for amateurs. We obsess over the numbers that move your business — qualified leads, conversion rates, revenue growth, and brand recall. Art serves strategy, always.</p>
+          </div>
+        </div>
+        <div class="value-row">
+          <span class="value-num">04</span>
+          <div class="value-content">
+            <h3>Disruption Is A Strategy</h3>
+            <p>Safe content is invisible content. We don't follow best practices — we create new ones. Bold, unapologetic, and impossible to ignore is the only way we know how to operate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why AGUN MEDIAS -->
+  <section class="section" style="background: #080808;">
+    <div class="container">
+      <p style="color: var(--orange); font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; font-size: 12px; margin-bottom: 20px; text-align: center;">Why Choose Us</p>
+      <h2 style="font-family: var(--ff-heading); font-size: clamp(36px, 4vw, 56px); text-align: center; margin-bottom: 64px;">
+        The <span class="text-orange">AGUN MEDIAS</span> Difference
+      </h2>
+      <div class="why-grid">
+        <div class="why-card hoverable">
+          <div class="why-icon"><i class="fa-solid fa-film"></i></div>
+          <h3>Full-Service Under One Roof</h3>
+          <p>From content production to paid ads to influencer outreach — we handle the complete pipeline. No fragmented agencies, no gaps, no excuses.</p>
+        </div>
+        <div class="why-card hoverable">
+          <div class="why-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Data Meets Creativity</h3>
+          <p>We balance bold creative instincts with hard performance data. Every creative decision is backed by insight, every insight is acted on fast.</p>
+        </div>
+        <div class="why-card hoverable">
+          <div class="why-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Trend-First Thinking</h3>
+          <p>Our team lives on the internet's cutting edge. We spot emerging trends early and engineer campaigns that ride them to maximum visibility.</p>
+        </div>
+        <div class="why-card hoverable">
+          <div class="why-icon"><i class="fa-solid fa-handshake"></i></div>
+          <h3>Partners, Not Vendors</h3>
+          <p>We embed ourselves in your brand. We think like stakeholders, act with ownership, and care deeply about your growth — not just deliverables.</p>
+        </div>
+        <div class="why-card hoverable">
+          <div class="why-icon"><i class="fa-brands fa-instagram"></i></div>
+          <h3>Platform Native Expertise</h3>
+          <p>Instagram, YouTube, LinkedIn, Reels — we don't just post content. We engineer platform-specific strategies that the algorithm rewards every time.</p>
+        </div>
+        <div class="why-card hoverable">
+          <div class="why-icon"><i class="fa-solid fa-fire"></i></div>
+          <h3>Relentless Execution</h3>
+          <p>We are obsessive about follow-through. From strategy to execution, every commitment we make is delivered — on time, on brand, and above expectation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <div class="container" style="padding-top: 80px; padding-bottom: 80px;">
+    <section style="background: linear-gradient(135deg, var(--orange) 0%, #ff0000 100%); border-radius: 40px; padding: clamp(64px, 10vw, 120px) 20px; text-align: center; position: relative; overflow: hidden;">
+      <div style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: url('https://www.transparenttextures.com/patterns/stardust.png'); opacity: 0.15; pointer-events: none; animation: spin 80s linear infinite;"></div>
+      <style>@keyframes spin { to { transform: rotate(360deg); } }</style>
+      <h2 style="font-family: var(--ff-heading); font-size: clamp(48px, 8vw, 120px); color: #000; line-height: 0.9; margin-bottom: 24px; position: relative; z-index: 2; text-transform: uppercase;">Build Your<br>Empire.</h2>
+      <p style="color: #111; font-size: clamp(16px, 2vw, 22px); font-weight: 700; margin-bottom: 48px; position: relative; z-index: 2;">Stop letting your competitors win. One message is all it takes.</p>
+      <div style="position: relative; z-index: 2; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
+        <a href="https://wa.me/919786580662" target="_blank" rel="noopener" class="btn hoverable" style="background: #000; color: #fff; font-size: 16px; padding: 20px 40px; border-radius: 100px; border: none; text-decoration: none; font-weight: 700; display: inline-flex; align-items: center; gap: 10px;">
+          <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+        <a href="mailto:agunmedias@gmail.com" class="btn hoverable" style="background: transparent; color: #000; font-size: 16px; padding: 20px 40px; border-radius: 100px; border: 2px solid #000; text-decoration: none; font-weight: 700; display: inline-flex; align-items: center; gap: 10px;">
+          <i class="fa-regular fa-envelope"></i> Email Us
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" style="font-family: var(--ff-heading); font-size: 40px; color: var(--white); text-decoration: none; letter-spacing: 0.05em; display: block; margin-bottom: 24px;">
+            <span class="text-orange">A</span>GUN MEDIAS
+          </a>
+          <p class="t-body" style="font-size: 16px; margin-bottom: 32px;">Your Digital Partner. We engineer movements for brands that refuse to be ignored.</p>
+        </div>
+        
+        <div>
+          <h4 style="font-family: var(--ff-heading); font-size: 24px; margin-bottom: 24px; color: var(--white-dim);">Quick Links</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px;">
+            <li><a href="index.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Home</a></li>
+            <li><a href="about.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">About Us</a></li>
+            <li><a href="services.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Services</a></li>
+            <li><a href="portfolio.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Portfolio</a></li>
+            <li><a href="packages.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Packages</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 style="font-family: var(--ff-heading); font-size: 32px; margin-bottom: 24px; color: var(--white-dim); text-transform: uppercase; font-weight: 800; letter-spacing: 0.05em;">CONTACT US</h4>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <a href="https://wa.me/919786580662" target="_blank" class="contact-btn hoverable">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://instagram.com/agunmedias" target="_blank" class="contact-btn hoverable">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="mailto:agunmedias@gmail.com" class="contact-btn hoverable">
+              <i class="fa-regular fa-envelope"></i> Email Us
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 AGUN MEDIAS. All Rights Reserved.</p>
+        <p style="font-family: var(--ff-heading); letter-spacing: 0.05em; color: var(--orange); font-size: 20px;">WE DOMINATE.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

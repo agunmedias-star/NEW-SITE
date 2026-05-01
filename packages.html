@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partnership Packages & Pricing | AGUN MEDIAS</title>
+  <meta name="description" content="View AGUN MEDIAS partnership packages. Choose a plan that fits your brand goals. Transparent pricing, elite execution." />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <style>
+    /* New Premium Redesign Styles */
+    .alliance-hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-top: 120px;
+    }
+
+    .hero-manifesto {
+      border-left: 4px solid var(--orange);
+      padding-left: 24px;
+      margin-top: 48px;
+    }
+
+    .phase-container {
+      display: flex;
+      flex-direction: column;
+      gap: 120px;
+      padding: 80px 0;
+    }
+
+    .phase-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+      background: var(--black-card);
+      border: 1px solid rgba(255,255,255,0.03);
+      border-radius: var(--radius-lg);
+      padding: 64px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.4s ease;
+    }
+
+    .phase-card:hover {
+      border-color: rgba(245, 124, 0, 0.3);
+    }
+
+    /* Glow Effect */
+    .phase-card::before {
+      content: '';
+      position: absolute;
+      top: -50%; left: -50%;
+      width: 200%; height: 200%;
+      background: radial-gradient(circle at 50% 50%, rgba(245, 124, 0, 0.05) 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      pointer-events: none;
+    }
+    .phase-card:hover::before { opacity: 1; }
+
+    .phase-number {
+      font-family: var(--ff-heading);
+      font-size: 120px;
+      color: rgba(255,255,255,0.03);
+      line-height: 0.8;
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      user-select: none;
+    }
+
+    .phase-header h2 {
+      font-family: var(--ff-heading);
+      font-size: clamp(48px, 6vw, 72px);
+      line-height: 1;
+      margin-bottom: 16px;
+      color: var(--white);
+    }
+
+    .phase-header .phase-label {
+      color: var(--orange);
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 24px;
+    }
+
+    .phase-description {
+      color: var(--white-dim);
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    .arsenal-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .arsenal-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .arsenal-list li:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .arsenal-icon {
+      width: 48px;
+      height: 72px;
+      background: rgba(245, 124, 0, 0.1);
+      border: 1px solid rgba(245, 124, 0, 0.2);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--orange);
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .arsenal-text h4 {
+      font-family: var(--ff-heading);
+      font-size: 20px;
+      color: var(--white);
+      margin-bottom: 4px;
+      letter-spacing: 0.05em;
+    }
+
+    .arsenal-text p {
+      font-size: 14px;
+      color: var(--white-dim);
+      line-height: 1.5;
+    }
+
+    @media (max-width: 992px) {
+      .phase-card {
+        grid-template-columns: 1fr;
+        padding: 40px 24px;
+        gap: 48px;
+      }
+      .phase-number { font-size: 80px; }
+    }
+
+    .sticky-desktop {
+      position: relative;
+    }
+    @media (min-width: 993px) {
+      .sticky-desktop {
+        position: sticky;
+        top: 120px;
+      }
+    }
+  </style>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <meta name="robots" content="index, follow" />
+  <link rel="packages.html" href="https://agunmedias.in/packages.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Partnership Packages & Pricing | AGUN MEDIAS" />
+  <meta property="og:description" content="View AGUN MEDIAS partnership packages. Choose a plan that fits your brand goals. Transparent pricing, elite execution." />
+  <meta property="og:url" content="https://agunmedias.in/packages.html" />
+  <meta property="og:site_name" content="AGUN MEDIAS" />
+  <meta property="og:image" content="https://agunmedias.in/assets/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Partnership Packages & Pricing | AGUN MEDIAS" />
+  <meta name="twitter:description" content="View AGUN MEDIAS partnership packages. Choose a plan that fits your brand goals. Transparent pricing, elite execution." />
+  <meta name="twitter:image" content="https://agunmedias.in/assets/img/og-image.png" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+</head>
+<body>
+  
+  <div id="custom-cursor"></div>
+  <div class="bg-mesh"></div>
+
+  <!-- Navbar -->
+  <nav class="nav" id="main-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" style="text-decoration:none;display:flex;align-items:center;"><img src="assets/img/Agun media logo.png" alt="AGUN MEDIAS Logo" style="height:72px;width:auto;" /></a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="packages.html" style="color: var(--white);">Partnership</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      
+      <a href="contact.html" class="btn btn-primary nav-cta" style="padding: 12px 32px; font-size: 14px;">Let's Talk</a>
+      
+      <div class="nav-hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="packages.html">Partnership</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="alliance-hero">
+    <div id="particles-js" style="position: absolute; inset: 0; z-index: 1;"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="grid-2" style="align-items: center; gap: 64px;">
+        <div>
+          <span class="text-orange fade-up" style="font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; font-size: 14px;">The Alliance</span>
+          <h1 class="t-hero fade-up" id="hero-headline" style="margin-top: 16px; text-align: left;">
+            We Don't Sell Services.<br>We Build <span class="text-orange">Empires</span>.
+          </h1>
+          <div class="hero-manifesto fade-up delay-1">
+            <p class="t-body" style="font-size: 18px; margin-bottom: 16px;">
+              Most agencies want to sell you a package of posts and clock out. We don't operate that way.
+            </p>
+            <p class="t-body" style="font-size: 18px;">
+              We partner with you, integrate our proprietary systems into your brand, and engineer a path for us to go viral together. Below are the phases of our collaboration.
+            </p>
+          </div>
+        </div>
+        <div class="fade-up delay-2" style="text-align: right; display: none;">
+           <!-- Reserved for an image or graphic if needed later -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phases Section (Replaces Pricing Grid) -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container phase-container">
+      
+      <!-- Phase 01 -->
+      <div class="phase-card fade-up hoverable">
+        <span class="phase-number">01</span>
+        
+        <div class="phase-header">
+          <span class="phase-label">The Foundation</span>
+          <h2>The Catalyst</h2>
+          <p class="phase-description">
+            Before you can scale, you must exist beautifully. This phase establishes your digital foothold. We audit your current identity, tear down what doesn't work, and deploy an initial content arsenal designed to break through the noise and establish immediate authority.
+          </p>
+          <a href="https://wa.me/919786580662" target="_blank" class="btn btn-outline">Apply for Phase 01</a>
+        </div>
+
+        <div>
+          <h3 style="font-family: var(--ff-heading); font-size: 24px; color: var(--white); margin-bottom: 32px; letter-spacing: 0.05em;">The Arsenal</h3>
+          <ul class="arsenal-list">
+            <li>
+              <div class="arsenal-icon"><i class="fa-solid fa-crosshairs"></i></div>
+              <div class="arsenal-text">
+                <h4>Strategic Audit & Identity</h4>
+                <p>Complete overhaul of your social profiles to optimize for conversion and aesthetic dominance.</p>
+              </div>
+            </li>
+            <li>
+              <div class="arsenal-icon"><i class="fa-solid fa-layer-group"></i></div>
+              <div class="arsenal-text">
+                <h4>Foundational Content Matrix</h4>
+                <p>12 High-impact static posts and carousels engineered for saves and shares.</p>
+              </div>
+            </li>
+            <li>
+              <div class="arsenal-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+              <div class="arsenal-text">
+                <h4>Viral Video Architecture</h4>
+                <p>4 Professionally edited Reels/Shorts utilizing proven retention frameworks.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Phase 02 -->
+      <div class="phase-card fade-up hoverable" style="border-color: rgba(245, 124, 0, 0.2); background: linear-gradient(135deg, rgba(20,20,20,1) 0%, rgba(5,5,5,1) 100%);">
+        <span class="phase-number" style="color: rgba(245, 124, 0, 0.05);">02</span>
+        
+        <!-- Order reversed for desktop via CSS order or just naturally in HTML? Let's just keep HTML order and let CSS Grid handle it -->
+        <div class="phase-header">
+          <span class="phase-label" style="color: var(--white);">The Growth Engine</span>
+          <h2 style="color: var(--orange);">The Momentum</h2>
+          <p class="phase-description">
+            Once the foundation is set, we pour fuel on the fire. This phase introduces full-scale production and strategic distribution. We don't just wait for organic reach; we actively hunt for attention using aggressive creative strategies and calculated growth tactics.
+          </p>
+          <a href="https://wa.me/919786580662" target="_blank" class="btn btn-primary" style="background: var(--orange); color: var(--black);">Apply for Phase 02</a>
+        </div>
+
+        <div>
+          <h3 style="font-family: var(--ff-heading); font-size: 24px; color: var(--white); margin-bottom: 32px; letter-spacing: 0.05em;">The Arsenal</h3>
+          <ul class="arsenal-list">
+            <li>
+              <div class="arsenal-icon"><i class="fa-solid fa-video"></i></div>
+              <div class="arsenal-text">
+                <h4>Cinematic Production</h4>
+                <p>1 Full-day professional shoot to capture premium brand assets and founder stories.</p>
+              </div>
+            </li>
+            <li>
+              <div class="arsenal-icon"><i class="fa-solid fa-bolt"></i></div>
+              <div class="arsenal-text">
+                <h4>High-Volume Distribution</h4>
+                <p>8 Cinematic Reels and 15 Strategic Brand Story assets pushed continuously.</p>
+              </div>
+            </li>
+            <li>
+              <div class="arsenal-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="arsenal-text">
+                <h4>Growth Engineering</h4>
+                <p>Active community management, DM scripting, and Bi-weekly strategic alignment calls.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Phase 03 -->
+      <div class="phase-card fade-up hoverable">
+        <span class="phase-number">03</span>
+        
+        <div class="phase-header">
+          <span class="phase-label">The Endgame</span>
+          <h2>The Dominator</h2>
+          <p class="phase-description">
+            Total Market Dominance. In this phase, we act as your outsourced CMO and dedicated media production house. Unlimited content, massive ad distribution, and aggressive influencer networking. You step back and focus on the business; we conquer the digital landscape.
+          </p>
+          <a href="contact.html" class="btn btn-outline">Schedule an Alliance Call</a>
+        </div>
+
+        <div>
+          <h3 style="font-family: var(--ff-heading); font-size: 24px; color: var(--white); margin-bottom: 32px; letter-spacing: 0.05em;">The Arsenal</h3>
+          <ul class="arsenal-list">
+            <li>
+              <div class="arsenal-icon"><i class="fa-solid fa-infinity"></i></div>
+              <div class="arsenal-text">
+                <h4>Unlimited Omnipresence</h4>
+                <p>An unrestricted content pipeline spanning Meta, YouTube, LinkedIn, and X.</p>
+              </div>
+            </li>
+            <li>
+              <div class="arsenal-icon"><i class="fa-solid fa-bullhorn"></i></div>
+              <div class="arsenal-text">
+                <h4>Ad & Influencer Supremacy</h4>
+                <p>High-budget Meta/Google ad management paired with strategic influencer orchestration.</p>
+              </div>
+            </li>
+            <li>
+              <div class="arsenal-icon"><i class="fa-solid fa-crown"></i></div>
+              <div class="arsenal-text">
+                <h4>Viral Loop Systems</h4>
+                <p>Custom sales funnels, dedicated account director, and automated lead generation engines.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" style="background: var(--black-mid);">
+    <div class="container">
+      <div class="text-center fade-up">
+        <h2 class="t-h1">Partnership <span class="text-orange">FAQ</span></h2>
+        <p class="t-body" style="max-width: 600px; margin: 16px auto 0;">Clear expectations on how we move as one unit.</p>
+      </div>
+
+      <div class="faq-container" style="max-width: 900px; margin: 64px auto 0;">
+        <div class="faq-item fade-up">
+          <div class="faq-question">
+            <span>How does the partnership commitment work?</span>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            We don't believe in locking you into restrictive 12-month contracts, but we do believe in momentum. Most viral loops take 60-90 days of consistent engineering to reach peak velocity. We partner on a month-to-month basis, focusing on continuous ROI and growth. If we aren't delivering, you aren't trapped.
+          </div>
+        </div>
+
+        <div class="faq-item fade-up delay-1">
+          <div class="faq-question">
+            <span>How is growth capital (Ad Spend) handled?</span>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            Your investment in the partnership covers our strategic engineering, creative direction, and media production. Ad spend is the external fuel we use to scale that production. We will work with you to determine the exact media budget needed, and that is paid directly to the platforms (Meta/Google).
+          </div>
+        </div>
+
+        <div class="faq-item fade-up delay-2">
+          <div class="faq-question">
+            <span>Why "Partner" instead of "Hire"?</span>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            Hiring implies you give us tasks. Partnering implies we give you results. We don't just "do your social media"—we embed our expertise into your operations. We challenge your ideas, push the creative boundaries, and ensure we both win by dominating your specific market.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <div class="container">
+    <section class="cta-banner hoverable" style="background: var(--orange); margin-bottom: 80px; margin-top: 80px;">
+      <h2 class="t-h1" style="color: var(--black);">Ready to <br>Dominate?</h2>
+      <p class="t-body" style="color: rgba(0,0,0,0.8); font-weight: 700;">Don't wait for your competitors to move first.</p>
+      <a href="contact.html" class="btn btn-primary" style="background: var(--black); color: var(--white); margin-top: 32px;">
+        Claim Your Spot <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" style="font-family: var(--ff-heading); font-size: 40px; color: var(--white); text-decoration: none; letter-spacing: 0.05em; display: block; margin-bottom: 24px;">
+            <span class="text-orange">A</span>GUN MEDIAS
+          </a>
+          <p class="t-body" style="font-size: 16px; margin-bottom: 32px;">Your Digital Partner. We engineer movements for brands that refuse to be ignored.</p>
+        </div>
+        
+        <div>
+          <h4 style="font-family: var(--ff-heading); font-size: 24px; margin-bottom: 24px; color: var(--white-dim);">Quick Links</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px;">
+            <li><a href="index.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Home</a></li>
+            <li><a href="about.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">About Us</a></li>
+            <li><a href="services.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Services</a></li>
+            <li><a href="portfolio.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Portfolio</a></li>
+            <li><a href="packages.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Partnership</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 style="font-family: var(--ff-heading); font-size: 32px; margin-bottom: 24px; color: var(--white-dim); text-transform: uppercase; font-weight: 800; letter-spacing: 0.05em;">CONTACT US</h4>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <a href="https://wa.me/919786580662" target="_blank" class="contact-btn hoverable">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://instagram.com/agunmedias" target="_blank" class="contact-btn hoverable">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="mailto:agunmedias@gmail.com" class="contact-btn hoverable">
+              <i class="fa-regular fa-envelope"></i> Email Us
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 AGUN MEDIAS. All Rights Reserved.</p>
+        <p style="font-family: var(--ff-heading); letter-spacing: 0.05em; color: var(--orange); font-size: 20px;">WE DOMINATE.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

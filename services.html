@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | Social Media, Ads, Content & More | AGUN MEDIAS</title>
+  <meta name="description" content="Explore AGUN MEDIAS full service suite: Social Media Management, Viral Campaigns, Content Creation, Influencer Marketing, Media Production and Social Ads." />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <style>
+    /* Section Specific Refinements */
+    .services-hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      padding-top: 120px;
+    }
+    
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 32px;
+      margin-top: 64px;
+    }
+
+    .service-card {
+      background: var(--black-card);
+      border: 1px solid var(--gray-border);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .service-card:hover {
+      border-color: var(--orange);
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .service-card .icon-box {
+      width: 70px;
+      height: 70px;
+      background: rgba(245, 124, 0, 0.1);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      color: var(--orange);
+      margin-bottom: 32px;
+      transition: var(--transition);
+    }
+
+    .service-card:hover .icon-box {
+      background: var(--orange);
+      color: var(--white);
+      transform: rotateY(360deg);
+    }
+
+    .service-card h3 {
+      font-family: var(--ff-heading);
+      font-size: 36px;
+      margin-bottom: 16px;
+      letter-spacing: 0.02em;
+    }
+
+    .service-card p {
+      margin-bottom: 32px;
+      color: var(--white-dim);
+    }
+
+    .service-features {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 32px;
+    }
+
+    .service-features li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      font-size: 16px;
+      color: var(--white-dim);
+    }
+
+    .service-features i {
+      color: var(--orange);
+      font-size: 14px;
+    }
+
+    /* FAQ Section */
+    .faq-container {
+      max-width: 900px;
+      margin-inline: auto;
+      margin-top: 64px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--gray-border);
+      padding: 32px 0;
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-family: var(--ff-heading);
+      font-size: 28px;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      color: var(--white-dim);
+      font-size: 18px;
+      padding-top: 0;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+      padding-top: 24px;
+    }
+
+    .faq-icon {
+      transition: transform 0.4s ease;
+      color: var(--orange);
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    @media (max-width: 768px) {
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+      .service-card {
+        padding: 32px;
+      }
+    }
+  </style>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <meta name="robots" content="index, follow" />
+  <link rel="services.html" href="https://agunmedias.in/services.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Our Services | Social Media, Ads, Content & More | AGUN MEDIAS" />
+  <meta property="og:description" content="Explore AGUN MEDIAS full service suite: Social Media Management, Viral Campaigns, Content Creation, Influencer Marketing, Media Production and Social Ads." />
+  <meta property="og:url" content="https://agunmedias.in/services.html" />
+  <meta property="og:site_name" content="AGUN MEDIAS" />
+  <meta property="og:image" content="https://agunmedias.in/assets/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Our Services | Social Media, Ads, Content & More | AGUN MEDIAS" />
+  <meta name="twitter:description" content="Explore AGUN MEDIAS full service suite: Social Media Management, Viral Campaigns, Content Creation, Influencer Marketing, Media Production and Social Ads." />
+  <meta name="twitter:image" content="https://agunmedias.in/assets/img/og-image.png" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+</head>
+<body>
+  
+  <div id="custom-cursor"></div>
+  <div class="bg-mesh"></div>
+
+  <!-- Navbar -->
+  <nav class="nav" id="main-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" style="text-decoration:none;display:flex;align-items:center;"><img src="assets/img/Agun media logo.png" alt="AGUN MEDIAS Logo" style="height:72px;width:auto;" /></a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" style="color: var(--white);">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      
+      <a href="contact.html" class="btn btn-primary nav-cta" style="padding: 12px 32px; font-size: 14px;">Let's Talk</a>
+      
+      <div class="nav-hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="packages.html">Packages</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Services Hero -->
+  <section class="services-hero">
+    <div id="particles-js" style="position: absolute; inset: 0; z-index: 1;"></div>
+    <div class="container" style="z-index: 2;">
+      <span class="text-orange fade-up" style="font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; font-size: 14px;">The Arsenal</span>
+      <h1 class="t-hero fade-up" id="hero-headline" style="margin-top: 16px;">We Scale <br><span class="text-orange">Empire</span>.</h1>
+      <p class="hero-sub fade-up delay-1" style="max-width: 800px;">
+        Not just services. We provide high-impact strategic solutions designed to crush the algorithm and turn your brand into a digital powerhouse.
+      </p>
+    </div>
+  </section>
+
+  <!-- Core Services Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center fade-up">
+        <h2 class="t-h1">The <span class="text-orange">Core</span> Arsenal</h2>
+        <p class="t-body" style="max-width: 600px; margin: 24px auto 0;">
+          Our services are built on a foundation of cinematic quality and aggressive data-driven strategies.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <!-- Service 1: Media Production -->
+        <div class="service-card fade-up hoverable">
+          <div>
+            <div class="icon-box"><i class="fa-solid fa-video"></i></div>
+            <h3>Media Production</h3>
+            <p>Cinema-grade visuals that capture the soul of your brand. We don't just film; we create experiences.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-circle-check"></i> High-End Commercial Shoots</li>
+              <li><i class="fa-solid fa-circle-check"></i> Product & Lifestyle Cinematography</li>
+              <li><i class="fa-solid fa-circle-check"></i> Podcast & Interview Setup</li>
+              <li><i class="fa-solid fa-circle-check"></i> Post-Production & Color Grading</li>
+            </ul>
+          </div>
+          <a href="service-production.html" class="btn btn-outline" style="width: 100%;">Explore Weapon 01</a>
+        </div>
+
+        <!-- Service 2: Social Ads -->
+        <div class="service-card fade-up delay-1 hoverable">
+          <div>
+            <div class="icon-box"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Social Ads (ROI Focus)</h3>
+            <p>Aggressive ad strategies that convert attention into revenue. We optimize every cent for maximum impact.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-circle-check"></i> Meta & Google Ads Management</li>
+              <li><i class="fa-solid fa-circle-check"></i> High-Converting Ad Creatives</li>
+              <li><i class="fa-solid fa-circle-check"></i> Funnel Strategy & Optimization</li>
+              <li><i class="fa-solid fa-circle-check"></i> Real-Time Data Analytics</li>
+            </ul>
+          </div>
+          <a href="service-ads.html" class="btn btn-outline" style="width: 100%;">Explore Weapon 02</a>
+        </div>
+
+        <!-- Service 3: Content Creation -->
+        <div class="service-card fade-up delay-2 hoverable">
+          <div>
+            <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
+            <h3>Content Creation</h3>
+            <p>Scroll-stopping content engineered for the current attention economy. Reels, Carousels, and viral hooks.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-circle-check"></i> Short-Form Video Strategy</li>
+              <li><i class="fa-solid fa-circle-check"></i> Graphic Design & Visual Storytelling</li>
+              <li><i class="fa-solid fa-circle-check"></i> Copywriting that Converts</li>
+              <li><i class="fa-solid fa-circle-check"></i> Batch Shooting & Content Planning</li>
+            </ul>
+          </div>
+          <a href="service-content.html" class="btn btn-outline" style="width: 100%;">Explore Weapon 03</a>
+        </div>
+
+        <!-- Service 4: SMM -->
+        <div class="service-card fade-up hoverable">
+          <div>
+            <div class="icon-box"><i class="fa-solid fa-users-gear"></i></div>
+            <h3>Social Media Management</h3>
+            <p>Total brand management. We handle the noise while you handle the business. Consistent, elite presence.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-circle-check"></i> Full Account Management</li>
+              <li><i class="fa-solid fa-circle-check"></i> Community Engagement & Growth</li>
+              <li><i class="fa-solid fa-circle-check"></i> Grid Design & Aesthetic Curation</li>
+              <li><i class="fa-solid fa-circle-check"></i> Strategic Posting Schedules</li>
+            </ul>
+          </div>
+          <a href="service-smm.html" class="btn btn-outline" style="width: 100%;">Explore Weapon 04</a>
+        </div>
+
+        <!-- Service 5: Viral Campaigns -->
+        <div class="service-card fade-up delay-1 hoverable">
+          <div>
+            <div class="icon-box"><i class="fa-solid fa-fire"></i></div>
+            <h3>Viral Campaigns</h3>
+            <p>Engineered for explosive organic reach. We use psychology and trend-jacking to make you the center of conversation.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-circle-check"></i> Trend-Jacking Strategies</li>
+              <li><i class="fa-solid fa-circle-check"></i> Guerrilla Marketing Concepts</li>
+              <li><i class="fa-solid fa-circle-check"></i> Challenge & Engagement Loops</li>
+              <li><i class="fa-solid fa-circle-check"></i> Massive Brand Awareness</li>
+            </ul>
+          </div>
+          <a href="service-viral.html" class="btn btn-outline" style="width: 100%;">Explore Weapon 05</a>
+        </div>
+
+        <!-- Service 6: Influencer Promotions -->
+        <div class="service-card fade-up delay-2 hoverable">
+          <div>
+            <div class="icon-box"><i class="fa-solid fa-star"></i></div>
+            <h3>Influencer Promotions</h3>
+            <p>Leverage established trust. We connect you with the right creators to amplify your message to millions.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-circle-check"></i> Niche Creator Matchmaking</li>
+              <li><i class="fa-solid fa-circle-check"></i> Campaign Briefing & Management</li>
+              <li><i class="fa-solid fa-circle-check"></i> Performance Tracking & ROI</li>
+              <li><i class="fa-solid fa-circle-check"></i> Long-Term Brand Ambassadors</li>
+            </ul>
+          </div>
+          <a href="service-influencer.html" class="btn btn-outline" style="width: 100%;">Explore Weapon 06</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="section" style="background: var(--black-mid);">
+    <div class="container">
+      <div class="process-container">
+        <div class="process-title fade-up">
+          <h2 class="t-h1">Our <br><span class="text-orange">Approach</span></h2>
+          <p class="t-body" style="margin-top: 24px;">Precision execution at every stage. We don't guess; we calculate.</p>
+        </div>
+        
+        <div class="process-steps">
+          <div class="process-step fade-up hoverable">
+            <div class="process-num">01</div>
+            <h3>Discovery & Audit</h3>
+            <p class="t-body">We tear down your current presence and find the leaks. We identify exactly where your audience is hiding and what content they are hungry for.</p>
+          </div>
+          <div class="process-step fade-up hoverable">
+            <div class="process-num">02</div>
+            <h3>The Battle Plan</h3>
+            <p class="t-body">No generic templates. We build a custom narrative and distribution strategy designed to bypass competitors and own the niche.</p>
+          </div>
+          <div class="process-step fade-up hoverable">
+            <div class="process-num">03</div>
+            <h3>Elite Production</h3>
+            <p class="t-body">We deploy our creative team to produce high-impact assets. Cinematic video, sharp copy, and bold designs that demand attention.</p>
+          </div>
+          <div class="process-step fade-up hoverable">
+            <div class="process-num">04</div>
+            <h3>Aggressive Scaling</h3>
+            <p class="t-body">Deployment across all fronts. We monitor real-time data, optimize performance, and scale what works for explosive growth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center fade-up">
+        <h2 class="t-h1">Common <span class="text-orange">Queries</span></h2>
+        <p class="t-body">Transparency is part of our strategy.</p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item fade-up">
+          <div class="faq-question">
+            <span>How long until I see results?</span>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            Organic growth usually starts showing significant traction within 60-90 days. However, with our Social Ads and Viral Campaign strategies, we often see explosive engagement and conversions within the first 14-30 days of launch.
+          </div>
+        </div>
+
+        <div class="faq-item fade-up">
+          <div class="faq-question">
+            <span>Do you work with startups?</span>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            We work with brands at various stages, but we prioritize those ready for scale. If you have a solid product/service and are ready to invest in aggressive growth, we are the right partner.
+          </div>
+        </div>
+
+        <div class="faq-item fade-up">
+          <div class="faq-question">
+            <span>Is the content creation custom?</span>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            100%. We never use templates or generic stock footage. Every piece of content is custom-shot, edited, and scripted specifically for your brand voice and audience psychology.
+          </div>
+        </div>
+
+        <div class="faq-item fade-up">
+          <div class="faq-question">
+            <span>How do you track success?</span>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            We look past vanity metrics like 'likes'. We track ROAS (Return on Ad Spend), conversion rates, cost per acquisition (CPA), and overall revenue growth. You receive a detailed intelligence report every month.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <div class="container">
+    <section class="cta-banner hoverable" style="background: var(--red-orange); margin-bottom: 80px;">
+      <h2 class="t-h1" style="color: var(--black);">Ready to <br>DominatE?</h2>
+      <p class="t-body" style="color: rgba(0,0,0,0.8); font-weight: 700;">Stop being a spectator. Become the main event.</p>
+      <a href="contact.html" class="btn btn-primary" style="background: var(--black); color: var(--white); margin-top: 32px;">
+        Start Your Movement <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" style="font-family: var(--ff-heading); font-size: 40px; color: var(--white); text-decoration: none; letter-spacing: 0.05em; display: block; margin-bottom: 24px;">
+            <span class="text-orange">A</span>GUN MEDIAS
+          </a>
+          <p class="t-body" style="font-size: 16px; margin-bottom: 32px;">Your Digital Partner. We engineer movements for brands that refuse to be ignored.</p>
+        </div>
+        
+        <div>
+          <h4 style="font-family: var(--ff-heading); font-size: 24px; margin-bottom: 24px; color: var(--white-dim);">Quick Links</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px;">
+            <li><a href="index.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Home</a></li>
+            <li><a href="about.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">About Us</a></li>
+            <li><a href="services.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Services</a></li>
+            <li><a href="portfolio.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Portfolio</a></li>
+            <li><a href="packages.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Packages</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 style="font-family: var(--ff-heading); font-size: 32px; margin-bottom: 24px; color: var(--white-dim); text-transform: uppercase; font-weight: 800; letter-spacing: 0.05em;">CONTACT US</h4>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <a href="https://wa.me/919786580662" target="_blank" class="contact-btn hoverable">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://instagram.com/agunmedias" target="_blank" class="contact-btn hoverable">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="mailto:agunmedias@gmail.com" class="contact-btn hoverable">
+              <i class="fa-regular fa-envelope"></i> Email Us
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 AGUN MEDIAS. All Rights Reserved.</p>
+        <p style="font-family: var(--ff-heading); letter-spacing: 0.05em; color: var(--orange); font-size: 20px;">WE DOMINATE.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

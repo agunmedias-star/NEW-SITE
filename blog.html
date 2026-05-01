@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketing Intelligence Blog | AGUN MEDIAS</title>
+  <meta name="description" content="Deep-dive marketing strategy, viral campaign breakdowns, and social media intelligence from AGUN MEDIAS. Read the latest expert insights." />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <style>
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 64px;
+    }
+    .blog-card {
+      background: var(--black-card);
+      border: 1px solid var(--gray-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: var(--transition);
+      backdrop-filter: blur(10px);
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card:hover {
+      border-color: var(--orange);
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(245, 124, 0, 0.15);
+    }
+    .blog-img-wrap {
+      width: 100%;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      background: var(--black-mid);
+    }
+    .blog-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+      opacity: 0.8;
+      mix-blend-mode: screen;
+    }
+    .blog-card:hover .blog-img-wrap img { 
+      transform: scale(1.05); 
+      opacity: 1;
+    }
+    .blog-content { padding: 32px; display: flex; flex-direction: column; flex-grow: 1; }
+    .blog-meta { font-family: var(--ff-body); font-size: 13px; color: var(--orange); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px; display: flex; gap: 16px; }
+    .blog-title { font-family: var(--ff-heading); font-size: 28px; line-height: 1.2; margin-bottom: 16px; color: var(--white); }
+    .blog-excerpt { font-size: 15px; color: var(--white-dim); margin-bottom: 32px; line-height: 1.6; flex-grow: 1; }
+    
+    @media(max-width: 992px) {
+      .blog-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media(max-width: 768px) {
+      .blog-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <meta name="robots" content="index, follow" />
+  <link rel="blog.html" href="https://agunmedias.in/blog.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Marketing Intelligence Blog | AGUN MEDIAS" />
+  <meta property="og:description" content="Deep-dive marketing strategy, viral campaign breakdowns, and social media intelligence from AGUN MEDIAS. Read the latest expert insights." />
+  <meta property="og:url" content="https://agunmedias.in/blog.html" />
+  <meta property="og:site_name" content="AGUN MEDIAS" />
+  <meta property="og:image" content="https://agunmedias.in/assets/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Marketing Intelligence Blog | AGUN MEDIAS" />
+  <meta name="twitter:description" content="Deep-dive marketing strategy, viral campaign breakdowns, and social media intelligence from AGUN MEDIAS. Read the latest expert insights." />
+  <meta name="twitter:image" content="https://agunmedias.in/assets/img/og-image.png" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+</head>
+<body>
+  
+  <div id="custom-cursor"></div>
+  <div class="bg-mesh"></div>
+
+  <!-- Navbar -->
+  <nav class="nav" id="main-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" style="text-decoration:none;display:flex;align-items:center;"><img src="assets/img/Agun media logo.png" alt="AGUN MEDIAS Logo" style="height:72px;width:auto;" /></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="packages.html">Partnership</a></li>
+        <li><a href="blog.html" style="color: var(--orange);">Blog</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta" style="padding: 12px 32px; font-size: 14px; background: var(--orange); color: var(--black);">Let's Talk</a>
+      <div class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="packages.html">Partnership</a>
+    <a href="blog.html" style="color: var(--orange);">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="hero" style="min-height: 60vh; padding-top: 140px; display: flex; align-items: center;">
+    <div id="particles-js" style="position: absolute; inset: 0; z-index: 1;"></div>
+    <div class="container" style="z-index: 2; position: relative;">
+      <span class="text-orange fade-up" style="font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; font-size: 14px; display: block; margin-bottom: 24px; text-align: center;">The Vault</span>
+      <h1 class="t-hero hero-headline fade-up" style="text-align: center; margin-bottom: 24px;">Marketing <span class="text-orange">Intelligence.</span></h1>
+      <p class="hero-sub fade-up delay-1" style="max-width: 800px; margin-inline: auto; text-align: center; font-size: 20px;">
+        Raw truths, unredacted strategies, and deep-dive psychological frameworks on how to build a brand that cannot be ignored.
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="section" style="padding-top: 0; padding-bottom: 120px;">
+    <div class="container">
+      <div class="blog-grid fade-up">
+        
+        <!-- Blog 1 -->
+        <div class="blog-card hoverable">
+          <a href="blog-1.html" style="text-decoration: none; display: flex; flex-direction: column; height: 100%;">
+            <div class="blog-img-wrap"><img src="assets/img/founder_cartoon.png" alt="Viral Campaign"></div>
+            <div class="blog-content">
+              <div class="blog-meta"><span>Strategy</span> <span>10 Min Read</span></div>
+              <h3 class="blog-title">The Anatomy of a Viral Campaign in 2026</h3>
+              <p class="blog-excerpt">What actually makes content go viral? It's not luck. It's a calculated, mathematical mix of psychology, timing, and flawless execution.</p>
+              <span class="text-orange" style="font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin-top: auto;">Access Intel &rarr;</span>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Blog 2 -->
+        <div class="blog-card hoverable">
+          <a href="blog-2.html" style="text-decoration: none; display: flex; flex-direction: column; height: 100%;">
+            <div class="blog-img-wrap"><img src="assets/img/founder_cartoon.png" alt="Cinematic Video"></div>
+            <div class="blog-content">
+              <div class="blog-meta"><span>Production</span> <span>12 Min Read</span></div>
+              <h3 class="blog-title">Why Your Brand Needs Cinematic Authority</h3>
+              <p class="blog-excerpt">UGC is great, but when you want to establish undeniable premium authority and charge high-ticket prices, you need high-end cinematic production.</p>
+              <span class="text-orange" style="font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin-top: auto;">Access Intel &rarr;</span>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Blog 3 -->
+        <div class="blog-card hoverable">
+          <a href="blog-3.html" style="text-decoration: none; display: flex; flex-direction: column; height: 100%;">
+            <div class="blog-img-wrap"><img src="assets/img/founder_cartoon.png" alt="Social Ads"></div>
+            <div class="blog-content">
+              <div class="blog-meta"><span>Ads</span> <span>15 Min Read</span></div>
+              <h3 class="blog-title">Stop Burning Cash: The Secret to High-ROI Meta Ads</h3>
+              <p class="blog-excerpt">Most brands bleed cash on Meta ads because their creative is weak. Here is how we engineer modular ad creatives that actually scale.</p>
+              <span class="text-orange" style="font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin-top: auto;">Access Intel &rarr;</span>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Blog 4 -->
+        <div class="blog-card hoverable">
+          <a href="blog-4.html" style="text-decoration: none; display: flex; flex-direction: column; height: 100%;">
+            <div class="blog-img-wrap"><img src="assets/img/founder_cartoon.png" alt="Influencer Marketing"></div>
+            <div class="blog-content">
+              <div class="blog-meta"><span>Marketing</span> <span>10 Min Read</span></div>
+              <h3 class="blog-title">The Vanity Scam: How to Actually Borrow Influencer Trust</h3>
+              <p class="blog-excerpt">Don't just pay for a shoutout from a 1M follower account. Learn how to strategically align with micro-creators to drive massive ROI.</p>
+              <span class="text-orange" style="font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin-top: auto;">Access Intel &rarr;</span>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Blog 5 -->
+        <div class="blog-card hoverable">
+          <a href="blog-5.html" style="text-decoration: none; display: flex; flex-direction: column; height: 100%;">
+            <div class="blog-img-wrap"><img src="assets/img/founder_cartoon.png" alt="Digital Domination"></div>
+            <div class="blog-content">
+              <div class="blog-meta"><span>Mindset</span> <span>11 Min Read</span></div>
+              <h3 class="blog-title">The Difference Between Posting and Dominating</h3>
+              <p class="blog-excerpt">Posting is a chore. Dominating is a strategy. Stop ticking boxes on your content calendar and start engineering cultural movements.</p>
+              <span class="text-orange" style="font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin-top: auto;">Access Intel &rarr;</span>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Blog 6 -->
+        <div class="blog-card hoverable">
+          <a href="blog-6.html" style="text-decoration: none; display: flex; flex-direction: column; height: 100%;">
+            <div class="blog-img-wrap"><img src="assets/img/founder_cartoon.png" alt="Trend Jacking"></div>
+            <div class="blog-content">
+              <div class="blog-meta"><span>Social</span> <span>9 Min Read</span></div>
+              <h3 class="blog-title">Trend-Jacking: How to Ride the Cultural Wave</h3>
+              <p class="blog-excerpt">How to quickly identify and leverage internet culture to inject your brand into the mainstream conversation before your competitors do.</p>
+              <span class="text-orange" style="font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin-top: auto;">Access Intel &rarr;</span>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Blog 7 -->
+        <div class="blog-card hoverable">
+          <a href="blog-7.html" style="text-decoration: none; display: flex; flex-direction: column; height: 100%;">
+            <div class="blog-img-wrap"><img src="assets/img/founder_cartoon.png" alt="Community"></div>
+            <div class="blog-content">
+              <div class="blog-meta"><span>Community</span> <span>14 Min Read</span></div>
+              <h3 class="blog-title">Cult Building: The Ultimate Guide to Community Management</h3>
+              <p class="blog-excerpt">Your comments section is a goldmine. Learn how to transform passive, silent scrollers into absolute, unshakeable brand evangelists.</p>
+              <span class="text-orange" style="font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin-top: auto;">Access Intel &rarr;</span>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Blog 8 -->
+        <div class="blog-card hoverable">
+          <a href="blog-8.html" style="text-decoration: none; display: flex; flex-direction: column; height: 100%;">
+            <div class="blog-img-wrap"><img src="assets/img/founder_cartoon.png" alt="Short Form Video"></div>
+            <div class="blog-content">
+              <div class="blog-meta"><span>Content</span> <span>10 Min Read</span></div>
+              <h3 class="blog-title">Neurological Editing: Mastering TikTok and Reels</h3>
+              <p class="blog-excerpt">The holy grail of modern reach. Dissecting the psychological hooks, fast pacing, and retention tactics of winning short-form videos.</p>
+              <span class="text-orange" style="font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin-top: auto;">Access Intel &rarr;</span>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Blog 9 -->
+        <div class="blog-card hoverable">
+          <a href="blog-9.html" style="text-decoration: none; display: flex; flex-direction: column; height: 100%;">
+            <div class="blog-img-wrap"><img src="assets/img/founder_cartoon.png" alt="Marketing Funnel"></div>
+            <div class="blog-content">
+              <div class="blog-meta"><span>Strategy</span> <span>16 Min Read</span></div>
+              <h3 class="blog-title">The Conversion Funnel: From Awareness to Checkout</h3>
+              <p class="blog-excerpt">Stop losing highly qualified leads. Learn the step-by-step framework to transition eyeballs from Instagram Reels straight to the checkout page.</p>
+              <span class="text-orange" style="font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin-top: auto;">Access Intel &rarr;</span>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Blog 10 -->
+        <div class="blog-card hoverable">
+          <a href="blog-10.html" style="text-decoration: none; display: flex; flex-direction: column; height: 100%;">
+            <div class="blog-img-wrap"><img src="assets/img/founder_cartoon.png" alt="Aesthetic Branding"></div>
+            <div class="blog-content">
+              <div class="blog-meta"><span>Branding</span> <span>12 Min Read</span></div>
+              <h3 class="blog-title">The Psychology of Aesthetic Branding in 2026</h3>
+              <p class="blog-excerpt">In a sea of minimalist, safe, generic corporate brands, the bold ones win. An inside look at the psychology of high-contrast maximalism.</p>
+              <span class="text-orange" style="font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin-top: auto;">Access Intel &rarr;</span>
+            </div>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div>
+          <a href="index.html" style="font-family: var(--ff-heading); font-size: 40px; color: var(--white); text-decoration: none; letter-spacing: 0.05em; display: block; margin-bottom: 24px;">
+            <span class="text-orange">A</span>GUN MEDIAS
+          </a>
+          <p class="t-body" style="font-size: 16px; margin-bottom: 32px;">Your Digital Partner. We engineer movements for brands that refuse to be ignored.</p>
+        </div>
+        
+        <div>
+          <h4 style="font-family: var(--ff-heading); font-size: 24px; margin-bottom: 24px; color: var(--white-dim);">Quick Links</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px;">
+            <li><a href="index.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Home</a></li>
+            <li><a href="about.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">About Us</a></li>
+            <li><a href="services.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Services</a></li>
+            <li><a href="portfolio.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Portfolio</a></li>
+            <li><a href="packages.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Partnership</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 style="font-family: var(--ff-heading); font-size: 32px; margin-bottom: 24px; color: var(--white-dim); text-transform: uppercase; font-weight: 800; letter-spacing: 0.05em;">CONTACT US</h4>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <a href="https://wa.me/919786580662" target="_blank" class="contact-btn hoverable" style="padding: 16px 24px; font-size: 16px; border-radius: 12px; border: 1px solid var(--gray-border); background: rgba(255,255,255,0.03);">
+              <i class="fa-brands fa-whatsapp" style="font-size: 20px; padding: 0; background: transparent;"></i> WhatsApp
+            </a>
+            <a href="https://instagram.com/agunmedias" target="_blank" class="contact-btn hoverable" style="padding: 16px 24px; font-size: 16px; border-radius: 12px; border: 1px solid var(--gray-border); background: rgba(255,255,255,0.03);">
+              <i class="fa-brands fa-instagram" style="font-size: 20px; padding: 0; background: transparent;"></i> Instagram
+            </a>
+            <a href="mailto:agunmedias@gmail.com" class="contact-btn hoverable" style="padding: 16px 24px; font-size: 16px; border-radius: 12px; border: 1px solid var(--gray-border); background: rgba(255,255,255,0.03);">
+              <i class="fa-regular fa-envelope" style="font-size: 20px; padding: 0; background: transparent;"></i> Email Us
+            </a>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 AGUN MEDIAS. All Rights Reserved.</p>
+        <p style="font-family: var(--ff-heading); letter-spacing: 0.05em; color: var(--orange); font-size: 20px;">WE DOMINATE.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

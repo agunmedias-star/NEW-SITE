@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply for Partnership | AGUN MEDIAS</title>
+  <meta name="description" content="Ready to dominate your market? Apply for a partnership with AGUN MEDIAS and let us engineer your brand growth." />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <style>
+    .contact-hero {
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      padding-top: 140px;
+      padding-bottom: 80px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 80px;
+    }
+    
+    .application-form {
+      background: var(--black-card);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: var(--radius-lg);
+      padding: 64px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .application-form::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: var(--red-orange);
+    }
+    
+    .form-group { margin-bottom: 32px; }
+    
+    .form-group label {
+      display: block;
+      font-family: var(--ff-body);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    
+    .form-control {
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      border: 1px solid var(--gray-border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      color: var(--white);
+      font-family: var(--ff-body);
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+    
+    .form-control:focus {
+      outline: none;
+      border-color: var(--orange);
+      background: rgba(245, 124, 0, 0.03);
+      box-shadow: 0 0 30px rgba(245, 124, 0, 0.1);
+    }
+    
+    .form-control::placeholder {
+      color: rgba(255,255,255,0.2);
+    }
+
+    textarea.form-control { 
+      resize: vertical; 
+      min-height: 180px; 
+    }
+
+    /* Custom Select Styling */
+    select.form-control {
+      appearance: none;
+      background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23F57C00%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+      background-repeat: no-repeat;
+      background-position: right 24px top 50%;
+      background-size: 12px auto;
+    }
+    select.form-control option {
+      background: var(--black-mid);
+      color: var(--white);
+    }
+    
+    .direct-access {
+      position: sticky;
+      top: 120px;
+    }
+
+    .direct-access .contact-btn {
+      padding: 24px;
+      font-size: 18px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.02);
+      border-color: rgba(255,255,255,0.05);
+    }
+
+    .direct-access .contact-btn i {
+      font-size: 24px;
+      background: rgba(245, 124, 0, 0.1);
+      padding: 16px;
+      border-radius: 12px;
+    }
+
+    .direct-access .contact-btn:hover i {
+      background: var(--orange);
+      color: var(--black);
+    }
+    
+    @media(max-width: 992px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 64px; }
+      .application-form { padding: 40px 24px; }
+      .direct-access { position: static; }
+    }
+  </style>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <meta name="robots" content="index, follow" />
+  <link rel="contact.html" href="https://agunmedias.in/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Apply for Partnership | AGUN MEDIAS" />
+  <meta property="og:description" content="Ready to dominate your market? Apply for a partnership with AGUN MEDIAS and let us engineer your brand growth." />
+  <meta property="og:url" content="https://agunmedias.in/contact.html" />
+  <meta property="og:site_name" content="AGUN MEDIAS" />
+  <meta property="og:image" content="https://agunmedias.in/assets/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Apply for Partnership | AGUN MEDIAS" />
+  <meta name="twitter:description" content="Ready to dominate your market? Apply for a partnership with AGUN MEDIAS and let us engineer your brand growth." />
+  <meta name="twitter:image" content="https://agunmedias.in/assets/img/og-image.png" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+</head>
+<body>
+  
+  <div id="custom-cursor"></div>
+  <div class="bg-mesh"></div>
+
+  <!-- Navbar -->
+  <nav class="nav" id="main-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" style="text-decoration:none;display:flex;align-items:center;"><img src="assets/img/Agun media logo.png" alt="AGUN MEDIAS Logo" style="height:72px;width:auto;" /></a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="packages.html">Partnership</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      
+      <a href="contact.html" class="btn btn-primary nav-cta" style="padding: 12px 32px; font-size: 14px; background: var(--orange); color: var(--black);">Let's Talk</a>
+      
+      <div class="nav-hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="packages.html">Partnership</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html" style="color: var(--orange);">Contact</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="contact-hero">
+    <div id="particles-js" style="position: absolute; inset: 0; z-index: 1;"></div>
+    <div class="container" style="z-index: 2; position: relative;">
+      <span class="text-orange fade-up" style="font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; font-size: 14px;">Initiate Protocol</span>
+      <h1 class="t-hero hero-headline fade-up" style="margin-top: 16px;">Start the <br><span class="text-orange">Alliance</span>.</h1>
+      <p class="hero-sub fade-up delay-1" style="max-width: 700px; margin-inline: auto;">
+        We don't take on every project. Apply below, and if we are a match, we will engineer your market dominance.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" style="padding-top: 0; padding-bottom: 120px;">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- Form -->
+        <div class="application-form fade-up delay-1">
+          <h2 class="t-h2 mb-32" style="font-size: 40px; margin-bottom: 40px;">Partnership <span class="text-orange">Application</span></h2>
+          
+          <form action="#" method="POST">
+            <div class="grid-2" style="gap: 24px;">
+              <div class="form-group">
+                <label for="name">Founder / Representative</label>
+                <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Direct Email</label>
+                <input type="email" id="email" class="form-control" placeholder="john@company.com" required>
+              </div>
+            </div>
+            
+            <div class="grid-2" style="gap: 24px;">
+              <div class="form-group">
+                <label for="brand">Brand URL / Instagram</label>
+                <input type="text" id="brand" class="form-control" placeholder="@yourbrand or website.com" required>
+              </div>
+              <div class="form-group">
+                <label for="revenue">Current Monthly Revenue</label>
+                <select id="revenue" class="form-control" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="under-10k">Under $10k / mo</option>
+                  <option value="10k-50k">$10k - $50k / mo</option>
+                  <option value="50k-100k">$50k - $100k / mo</option>
+                  <option value="100k-plus">$100k+ / mo</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="goal">What is the ultimate objective?</label>
+              <textarea id="goal" class="form-control" placeholder="e.g., We need to scale our e-com sales via Meta Ads, or we want to completely rebrand our digital identity..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary hoverable" style="width: 100%; border: none; padding: 24px; font-size: 18px; margin-top: 16px;">Submit Application <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i></button>
+          </form>
+        </div>
+        
+        <!-- Details -->
+        <div class="direct-access fade-up delay-2">
+          <h2 class="t-h2 mb-32" style="font-size: 40px; margin-bottom: 24px;">Direct <span class="text-orange">Access</span></h2>
+          <p class="t-body mb-32" style="margin-bottom: 40px;">
+            Applications are reviewed within 24 hours. For urgent inquiries or media production requests, utilize our direct channels.
+          </p>
+          
+          <div class="contact-buttons">
+            <a href="https://wa.me/919786580662" target="_blank" class="contact-btn hoverable">
+              <i class="fa-brands fa-whatsapp"></i> +91 97865 80662
+            </a>
+            <a href="https://instagram.com/agunmedias" target="_blank" class="contact-btn hoverable">
+              <i class="fa-brands fa-instagram"></i> @agunmedias
+            </a>
+            <a href="https://linkedin.com/company/agunmedias" target="_blank" class="contact-btn hoverable">
+              <i class="fa-brands fa-linkedin-in"></i> AGUN MEDIAS
+            </a>
+            <a href="mailto:agunmedias@gmail.com" class="contact-btn hoverable">
+              <i class="fa-regular fa-envelope"></i> agunmedias@gmail.com
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div>
+          <a href="index.html" style="font-family: var(--ff-heading); font-size: 40px; color: var(--white); text-decoration: none; letter-spacing: 0.05em; display: block; margin-bottom: 24px;">
+            <span class="text-orange">A</span>GUN MEDIAS
+          </a>
+          <p class="t-body" style="font-size: 16px; margin-bottom: 32px;">Your Digital Partner. We engineer movements for brands that refuse to be ignored.</p>
+        </div>
+        
+        <div>
+          <h4 style="font-family: var(--ff-heading); font-size: 24px; margin-bottom: 24px; color: var(--white-dim);">Quick Links</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px;">
+            <li><a href="index.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Home</a></li>
+            <li><a href="about.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">About Us</a></li>
+            <li><a href="services.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Services</a></li>
+            <li><a href="portfolio.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Portfolio</a></li>
+            <li><a href="packages.html" style="color: var(--white); text-decoration: none; font-weight: 500;" class="hoverable">Partnership</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 style="font-family: var(--ff-heading); font-size: 32px; margin-bottom: 24px; color: var(--white-dim); text-transform: uppercase; font-weight: 800; letter-spacing: 0.05em;">CONTACT US</h4>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <a href="https://wa.me/919786580662" target="_blank" class="contact-btn hoverable" style="padding: 16px 24px; font-size: 16px; border-radius: 12px; border: 1px solid var(--gray-border); background: rgba(255,255,255,0.03);">
+              <i class="fa-brands fa-whatsapp" style="font-size: 20px; padding: 0; background: transparent;"></i> WhatsApp
+            </a>
+            <a href="https://instagram.com/agunmedias" target="_blank" class="contact-btn hoverable" style="padding: 16px 24px; font-size: 16px; border-radius: 12px; border: 1px solid var(--gray-border); background: rgba(255,255,255,0.03);">
+              <i class="fa-brands fa-instagram" style="font-size: 20px; padding: 0; background: transparent;"></i> Instagram
+            </a>
+            <a href="mailto:agunmedias@gmail.com" class="contact-btn hoverable" style="padding: 16px 24px; font-size: 16px; border-radius: 12px; border: 1px solid var(--gray-border); background: rgba(255,255,255,0.03);">
+              <i class="fa-regular fa-envelope" style="font-size: 20px; padding: 0; background: transparent;"></i> Email Us
+            </a>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 AGUN MEDIAS. All Rights Reserved.</p>
+        <p style="font-family: var(--ff-heading); letter-spacing: 0.05em; color: var(--orange); font-size: 20px;">WE DOMINATE.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
